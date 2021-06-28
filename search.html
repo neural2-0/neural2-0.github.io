@@ -1,6 +1,14 @@
 <html>
 <head><title>Search</title>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4RQX97P803"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-4RQX97P803');
+</script>
 <style>
 
 .searchResult table {
@@ -41,6 +49,13 @@
    <tr>
      <td width = 80%>
      <div id ='brainExtSearchDivToReplace'>
+       <table align='center'>
+         <tr>
+           <td><input type='text' id='BRAINSearchWords' size=80 placeholder='Search string or RegEx (Leave empty to fetch everything)'> 
+<img  id='brainExtensionSearchBtn' src='searchIcon2.png' width = 30px alt='E' title='Edit'/>
+</td></tr><tr><td align = 'center'>
+<input type='radio' name = 'BRAINSearchScope' id='BRAINSearchScope1' value='HighNote' checked='checked'>Search highlights and notes only &nbsp;&nbsp;&nbsp;
+<input type='radio' name = 'BRAINSearchScope' id='BRAINSearchScope2' value='AllStuff'>Search everything/entire page contents (might be slow)</td></tr> </table>
   <center><h2>Please install this <a href='https://chrome.google.com/webstore/detail/annotate-the-web-context/emajnoacacifjgmkkmheackniabamonm'>awesome extension</a> to access its search via this page!</h2></center>
 </div>
     <br>
